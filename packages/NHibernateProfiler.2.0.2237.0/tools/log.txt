@@ -1,0 +1,29 @@
+2014-07-14 11:21:06,670 [1] DEBUG HibernatingRhinos.Profiler.Client.Host.ClientService [(null)] - Profiler initialized. Build: 2237
+2014-07-14 11:21:07,221 [1] DEBUG HibernatingRhinos.Profiler.Client.Host.ClientService [(null)] - Attempt to start HTTP listener
+2014-07-14 11:21:07,221 [1] DEBUG HibernatingRhinos.Profiler.Client.Host.ClientService [(null)] - HTTP listener started successfully
+2014-07-14 11:50:04,938 [1] DEBUG HibernatingRhinos.Profiler.Client.Host.ClientService [(null)] - Profiler initialized. Build: 2237
+2014-07-14 11:50:05,194 [1] DEBUG HibernatingRhinos.Profiler.Client.Host.ClientService [(null)] - Attempt to start HTTP listener
+2014-07-14 11:50:05,194 [1] DEBUG HibernatingRhinos.Profiler.Client.Host.ClientService [(null)] - HTTP listener started successfully
+2014-07-14 11:50:22,173 [6] WARN  Rhino.Licensing.AbstractLicenseValidator [(null)] - License expiration date is 08/14/2014 00:00:00
+2014-07-14 11:50:22,315 [4] ERROR Rhino.Licensing.Discovery.DiscoveryClient [(null)] - Failed to publish application's presence
+System.Net.Sockets.SocketException (0x80004005): A socket operation was attempted to an unreachable host
+   at System.Net.Sockets.Socket.EndSendTo(IAsyncResult asyncResult)
+   at System.Net.Sockets.UdpClient.EndSend(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Rhino.Licensing.Discovery.DiscoveryClient.<PublishMyPresence>d__2.MoveNext()
+2014-07-14 11:50:22,316 [6] DEBUG Rhino.Licensing.AbstractLicenseValidator [(null)] - License accepted for NHibernate Profiler
+2014-07-14 11:50:22,377 [6] WARN  Rhino.Licensing.AbstractLicenseValidator [(null)] - License expiration date is 08/14/2014 00:00:00
+2014-07-14 11:50:22,455 [6] DEBUG Rhino.Licensing.AbstractLicenseValidator [(null)] - License accepted for NHibernate Profiler
+2014-07-14 11:50:22,455 [14] ERROR Rhino.Licensing.Discovery.DiscoveryClient [(null)] - Failed to publish application's presence
+System.Net.Sockets.SocketException (0x80004005): A socket operation was attempted to an unreachable host
+   at System.Net.Sockets.Socket.EndSendTo(IAsyncResult asyncResult)
+   at System.Net.Sockets.UdpClient.EndSend(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Rhino.Licensing.Discovery.DiscoveryClient.<PublishMyPresence>d__2.MoveNext()
+2014-07-14 11:50:22,458 [8] INFO  HibernatingRhinos.Profiler.Client.Infrastructure.AutoUpdate.ProfilerAutoUpdate [(null)] - Checking for updates...
